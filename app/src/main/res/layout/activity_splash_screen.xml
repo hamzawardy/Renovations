@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashScreenActivity">
+
+    <ImageView
+        android:id="@+id/imgv1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/img3"
+        app:layout_constraintEnd_toStartOf="@+id/imgv5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ren1_foreground" />
+
+    <ImageView
+        android:id="@+id/imgv2"
+        android:layout_width="0dp"
+        android:layout_height="270dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/imgv4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img3"
+        app:srcCompat="@mipmap/ren2_foreground" />
+
+    <ImageView
+        android:id="@+id/img3"
+        android:layout_width="415dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="265dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imgv2"
+        app:layout_constraintStart_toEndOf="@+id/imgv2"
+        app:layout_constraintTop_toBottomOf="@+id/imgv1"
+        app:srcCompat="@mipmap/word_round" />
+
+    <ImageView
+        android:id="@+id/imgv4"
+        android:layout_width="0dp"
+        android:layout_height="280dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgv2"
+        app:layout_constraintTop_toBottomOf="@+id/img3"
+        app:srcCompat="@mipmap/ren3" />
+
+    <ImageView
+        android:id="@+id/imgv5"
+        android:layout_width="0dp"
+        android:layout_height="233dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/img3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgv1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ren4_foreground" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

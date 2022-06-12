@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelectionActivity">
+
+    <Button
+        android:id="@+id/btnP"
+        android:layout_width="262dp"
+        android:layout_height="101dp"
+        android:layout_marginTop="232dp"
+        android:backgroundTint="#427368"
+        android:text="professional"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnc"
+        android:layout_width="273dp"
+        android:layout_height="106dp"
+        android:layout_marginTop="96dp"
+        android:backgroundTint="#4F7C6F"
+        android:text="community"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnP" />
+</androidx.constraintlayout.widget.ConstraintLayout>

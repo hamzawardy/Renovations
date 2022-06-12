@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "529685966907",
+    "project_id": "renovations-ea4a1",
+    "storage_bucket": "renovations-ea4a1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:529685966907:android:83367cd434cb64eea3ac1e",
+        "android_client_info": {
+          "package_name": "my.hamza.renovations"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "529685966907-aghba7oobn9pgg3phr5gbn4n7ejqolm0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAcOHCOg2GECOsD1MkNF4Lp6JsShi9D1qA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "529685966907-aghba7oobn9pgg3phr5gbn4n7ejqolm0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
