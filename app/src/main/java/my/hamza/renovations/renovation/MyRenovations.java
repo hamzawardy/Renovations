@@ -15,26 +15,21 @@ public class MyRenovations
     public String getTitle() {
         return title;
     }
-
     public void setTitle(String title) {
         this.title = title;
     }
     public String getSubject() {
         return subject;
     }
-
     public void setSubject(String subject) {
         this.subject = subject;
     }
     public String getVideo() {
         return video;
     }
-
     public void setVideo(String video) {
         this.video = video;
     }
-
-
     public String getKey() {
         return key;
     }
@@ -84,6 +79,15 @@ public class MyRenovations
 
     public void setLang(double lang) {
         this.lang = lang;
+    }
+    @Override
+    public String toString() {
+        return "MyTask{" +
+                "key='" + key + '\'' +
+                ", title='" + title + '\'' +
+                ", subject='" + subject + '\'' +
+                ", important=" + address +
+                '}';
     }
 
 

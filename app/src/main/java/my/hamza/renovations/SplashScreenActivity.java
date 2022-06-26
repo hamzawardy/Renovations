@@ -22,6 +22,7 @@ public class SplashScreenActivity extends AppCompatActivity {
 
         Thread th=new Thread() {
             @Override
+            //الدالة run وظيفتها أن تجمد الشاشة لمدة محددة (هنا 3 ثواني )
             public void run() {
                 //   هنا المقطع الذي يعمل بالتزامن مع مقاطع اخرى
                 int ms = 3 * 1000;//millisecond

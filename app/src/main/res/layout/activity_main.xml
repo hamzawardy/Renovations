@@ -8,19 +8,27 @@
 
     <SearchView
         android:id="@+id/srch1"
-        android:layout_width="411dp"
+        android:layout_width="0dp"
         android:layout_height="51dp"
-        android:layout_marginBottom="49dp"
-        app:layout_constraintBottom_toTopOf="@+id/_dynamic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ListView
-        android:layout_width="413dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="393dp"
+        android:id="@+id/listv"
+        android:layout_width="0dp"
+        android:layout_height="623dp"
+        app:layout_constraintBottom_toTopOf="@+id/fabAdd1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/srch1" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAdd1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/srch1" />
+        app:srcCompat="@android:drawable/ic_input_add" />
 </androidx.constraintlayout.widget.ConstraintLayout>

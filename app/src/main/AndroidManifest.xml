@@ -13,15 +13,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Renovations">
         <activity
-            android:name=".professionalActivity"
-            android:exported="true" />
-        <activity
-            android:name=".CommunityActivity"
-            android:exported="true" />
-        <activity
-            android:name=".SelectionActivity"
-            android:exported="true" />
-        <activity
             android:name=".SignInActivity"
             android:exported="true" />
         <activity
@@ -30,6 +21,7 @@
         <activity
             android:name=".SettingActivity"
             android:exported="true" />
+
         <activity
             android:name=".SplashScreenActivity"
             android:exported="true">
@@ -39,6 +31,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
             android:name=".MainActivity"
             android:exported="true" />

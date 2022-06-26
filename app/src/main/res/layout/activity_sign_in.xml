@@ -17,8 +17,8 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etEmail"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="397dp"
+            android:layout_height="match_parent"
             android:background="#01FBDE"
             android:backgroundTint="#03A9F4"
             android:hint="Email" />

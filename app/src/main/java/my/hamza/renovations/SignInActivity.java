@@ -24,12 +24,14 @@ public class SignInActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_in);
 
+        //getInstance() تعطي مؤشر على البرويكت الخاص بي
         FirebaseAuth auth = FirebaseAuth.getInstance();
         if(auth.getCurrentUser()!=null && auth.getCurrentUser().getEmail()!=null)
         {
 
             Intent intent=new Intent(SignInActivity.this,MainActivity.class);
             startActivity(intent);
+            finish ();
         }
 
 
@@ -38,6 +40,7 @@ public class SignInActivity extends AppCompatActivity {
         etPassword=findViewById(R.id.etPassword);
         btnSignin=findViewById(R.id.btnSignin);
         btnregister=findViewById(R.id.btnregister);
+
 
 
         btnregister.setOnClickListener(new View.OnClickListener() {
@@ -62,8 +65,10 @@ public class SignInActivity extends AppCompatActivity {
         if(auth.getCurrentUser()!=null && auth.getCurrentUser().getEmail()!=null)
         {
 
-            Intent intent=new Intent(SignInActivity.this,CommunityActivity.class);
+            Intent intent=new Intent(SignInActivity.this,MainActivity.class);
             startActivity(intent);
+            finish ();
+
         }
     }
 
@@ -106,8 +111,9 @@ public class SignInActivity extends AppCompatActivity {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if (task.isSuccessful()) {
-                    Intent intent = new Intent(SignInActivity.this, CommunityActivity.class);
+                    Intent intent = new Intent(SignInActivity.this, MainActivity.class);
                     startActivity(intent);
+                    finish ();
                 }
                 else{
                     etEmail.setError("email or password is wrong");

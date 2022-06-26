@@ -205,7 +205,8 @@ public class AddRenovationActivity extends AppCompatActivity
 
     private void getCurrentLocation() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-            if (ActivityCompat.checkSelfPermission(AddRenovationActivity.this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
+            if (ActivityCompat.checkSelfPermission(AddRenovationActivity.this, Manifest.permission.ACCESS_FINE_LOCATION)
+                    == PackageManager.PERMISSION_GRANTED) {
 
                 if (isGPSEnabled()) {
 
@@ -389,7 +390,8 @@ public class AddRenovationActivity extends AppCompatActivity
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
-        if (requestCode == 2) {
+        if (requestCode == 2)
+        {
             if (resultCode == Activity.RESULT_OK) {
                 getCurrentLocation();
             }

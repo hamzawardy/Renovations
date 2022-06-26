@@ -11,6 +11,7 @@
         android:layout_width="408dp"
         android:layout_height="0dp"
         android:layout_marginBottom="327dp"
+        android:hint="Title"
         app:layout_constraintBottom_toTopOf="@+id/imageButton2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -33,6 +34,7 @@
         android:id="@+id/textInputLayout9"
         android:layout_width="409dp"
         android:layout_height="53dp"
+        android:hint="Subject"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout8">
@@ -43,7 +45,7 @@
             android:layout_height="wrap_content"
             android:background="#FFFFFF"
             android:hint="Subject"
-            android:textColor="#1207C581"
+            android:textColor="#000000"
             android:textSize="24sp"
             android:textStyle="italic" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -52,6 +54,7 @@
         android:id="@+id/textInputLayout10"
         android:layout_width="413dp"
         android:layout_height="54dp"
+        android:hint="address"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout9">
@@ -62,6 +65,7 @@
             android:layout_height="wrap_content"
             android:background="#FFFFFF"
             android:hint="address"
+            android:textColor="#000000"
             android:textSize="24sp"
             android:textStyle="italic" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -78,13 +82,15 @@
 
     <ImageButton
         android:id="@+id/imgV"
-        android:layout_width="116dp"
+        android:layout_width="0dp"
         android:layout_height="121dp"
         android:layout_marginTop="32dp"
+        android:layout_marginEnd="14dp"
         android:scrollbarSize="1000dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgP"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout11"
-        app:srcCompat="@android:drawable/presence_video_online"
-        tools:layout_editor_absoluteX="281dp" />
+        app:srcCompat="@android:drawable/presence_video_online" />
 
     <TextView
         android:id="@+id/tvGps"
@@ -119,7 +125,7 @@
         android:layout_height="104dp"
         android:layout_marginTop="12dp"
         android:layout_marginEnd="168dp"
-        app:layout_constraintEnd_toStartOf="@+id/btnUp1"
+        app:layout_constraintEnd_toStartOf="@+id/imgV"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imGps"
         app:srcCompat="@android:drawable/ic_menu_camera" />
@@ -139,6 +145,7 @@
         android:id="@+id/textInputLayout11"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:hint="Answer"
         app:layout_constraintEnd_toEndOf="@+id/imGps"
         app:layout_constraintStart_toEndOf="@+id/imGps"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout10">
@@ -153,7 +160,7 @@
             android:gravity="start|top"
             android:hint="Answer"
             android:inputType="textMultiLine"
-            android:textColor="#28BFB1"
+            android:textColor="#000000"
             android:textColorHint="#D61717"
             android:textSize="34sp"
             android:textStyle="bold|italic" />

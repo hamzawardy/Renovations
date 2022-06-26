@@ -34,6 +34,7 @@ public class SignUpActivity extends AppCompatActivity {
 
         btnSave.setOnClickListener(new View.OnClickListener() {
             @Override
+            //onClick وظيفتها عند النقر على زر التفعيل ان تحقق الهدف التي يحويها الزر
             public void onClick(View view) {
                 renovationUp();
             }
@@ -41,6 +42,7 @@ public class SignUpActivity extends AppCompatActivity {
 
     }
 
+    //والهدف من الدالة renovationUp هو التحقق من الشروط المدخلات التي أدخلها المستخدم لكي يعمل حساب خاص به .
     private void renovationUp() {
 
         boolean isOk=true;//if all the fields filled well
@@ -84,9 +86,9 @@ public class SignUpActivity extends AppCompatActivity {
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(task.isSuccessful()){
                     Toast.makeText(SignUpActivity.this,"Sign Up successful",Toast.LENGTH_LONG).show();
-                    Intent intent=new Intent(SignUpActivity.this,CommunityActivity.class);
+                    Intent intent=new Intent(SignUpActivity.this,MainActivity.class);
                     startActivity(intent);
-                    finish();
+
                 }
                 else {
                     etEmail.setError("Sign Up failed");
